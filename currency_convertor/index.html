@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <button id="openDialog">Open Currency Converter</button>
+
+    <div id="dialog" class="dialog">
+        <div class="dialog-content">
+            <span class="close-button">&times;</span>
+            <h2>Currency Converter</h2>
+            <form id="converterForm">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                <label for="fromCurrency">From:</label>
+                <select id="fromCurrency" name="fromCurrency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                    <option value="AUD">AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="CHF">CHF</option>
+                    <option value="CNY">CNY</option>
+                    <option value="HKD">HKD</option>
+                    <option value="INR">INR</option>
+                    <option value="KRW">KRW</option>
+                    <option value="NZD">NZD</option>
+                    <option value="RUB">RUB</option>
+                    <!-- Add more currencies as needed -->
+                </select>
+                <label for="toCurrency">To:</label>
+                <select id="toCurrency" name="toCurrency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                    <option value="AUD">AUD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="CHF">CHF</option>
+                    <option value="CNY">CNY</option>
+                    <option value="HKD">HKD</option>
+                    <option value="INR">INR</option>
+                    <option value="KRW">KRW</option>
+                    <option value="NZD">NZD</option>
+                    <option value="RUB">RUB</option>
+
+                    <!-- Add more currencies as needed -->
+                </select>
+                <button type="submit">Convert</button>
+            </form>
+            <div id="rate"></div>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
